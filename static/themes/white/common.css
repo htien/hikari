@@ -1,0 +1,143 @@
+/*
+ * FREE FOR ALL BUT DOES NOT MEAN THERE IS NO PRICE.
+ *
+ * @author Tien Nguyen
+ * @version $Id: common.css,v 1.0 2011/10/03 21:14:25 lilylnx Exp $
+ */
+
+*|*:-moz-any-link:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  padding: 1px 2px;
+  border: 1px none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="image"], label {
+  cursor: default;
+}
+
+a, a:visited {
+  color: #11c /*#3B5998*/;
+  text-decoration: none;
+}
+
+a:hover, a:active. a:focus {
+  color: #800;
+  text-decoration: underline;
+}
+
+abbr {
+  border-bottom: 1px dotted #a3756e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+img, div {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: .85em;
+}
+
+pre, code {
+  font-family: monaco, 'dejavu sans mono', 'bitstream vera sans mono', 'courier new', monospace;
+}
+
+strong {
+  font-weight: bold;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+body {
+  line-height: 1.4;
+  visibility: visible;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #333;
+  background-color: #fff;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.clear, .section {
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+
+.clear:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.fixed_elem {
+  position: fixed !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.nobullets {
+  list-style: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.widefat {
+  clear: both;
+  width: 100%;
+}
+
+.widefat * {
+  word-wrap: break-word;
+}
+
+ol.nobullets, ul.nobullets {
+  padding-left: 0;
+}
+
+table.fixed {
+  table-layout: fixed;
+}
+

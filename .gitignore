@@ -1,0 +1,18 @@
+### Typically *NIX text editors, by default, append '~' to files on saving to make backups
+*~
+
+### Archives
+*.tar.gz
+*.tar.bz2
+
+### Windows
+.DS_Store?
+Desktop.ini
+Icon?
+Thumbs.db
+ehthumbs.db
+
+### Miscellaneous
+*.bak
+*.log
+Config.asp

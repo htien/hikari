@@ -3,20 +3,23 @@
 
 <%
 
-var connect;
+var hikari;
 var rs;
 
 try {
-	connect = new HikariConnection(config);
-	connect.open();
+	hikari = new HikariConnection;
+	createConfig(hikari);
+
+	hikari.open();
 }
 catch (ex) {
-	connect.errorMessage = config.debug ? ex.message : "Cannot connect to database.";
+	hikari.errorMessage = hikari.config.debug ? ex.message : "Cannot connect to database.";
 }
 
-if (connect.errorMessage.length) {
-	if (config.debug) {
-		Response.Write(connect.errorMessage);
+if (hikari.errorMessage.length) {
+	if (hikari.config.debug) {
+		Response.Write("<h2>" + hikari.errorMessage + "</h2>");
+		Response.End();
 	}
 }
 else {

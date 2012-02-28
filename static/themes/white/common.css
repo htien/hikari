@@ -67,17 +67,18 @@ strong {
   font-weight: bold;
 }
 
-html, body {
-  height: 100%;
-}
-
 html {
   overflow-x: auto;
   overflow-y: scroll;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   line-height: 1.4;
+  vertical-align: baseline;
   visibility: visible;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
   font-size: 13px;

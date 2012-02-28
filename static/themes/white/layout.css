@@ -1,16 +1,11 @@
-.gb {
-	border: 2px solid #000;
-}
+.gb {}
 
-.gA, .gl {
-	margin: 5px;
-	border: 1px solid #000;
-}
+.gl {}
 
 #globalContainer {
-	position: relative;
-	height: auto;
-	min-width: 785px;
-	min-height: 100%;
+  position: relative;
+  height: auto;
+  min-width: 785px;
+  min-height: 100%;
 }
 

@@ -7,7 +7,7 @@ HikariConfig = function(dataSource, initialCatalog, userId, password, provider) 
 	this.debug = false;
 	
 	this.codeName = "Hikari";
-	this.webTitle = "Hikari Electronics";
+	this.pageTitle = "Hikari Electronics";
 	this.version = "1.0";
 	this.author = "Phuong Lien";
 

@@ -3,7 +3,7 @@
 
 <%
 
-var	connect;
+var connect;
 var rs;
 
 try {

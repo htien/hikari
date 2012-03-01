@@ -1,0 +1,10 @@
+.hikari .gA, .hikari .gl {
+  position: relative;
+}
+
+.hikari #globalContainer {
+  height: auto;
+  min-width: 785px;
+  min-height: 100%;
+}
+

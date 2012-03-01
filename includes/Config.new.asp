@@ -1,18 +1,18 @@
 <%
 
-function createConfig(h) {
-	h.config.debug = true;
-	
-	h.config.dataSource      = "CERN\\SQLEXPRESS";
-	h.config.initialCatalog  = "Microsale";
-	h.config.userId          = "sa";
-	h.config.password        = "sysadmin";
-	h.config.provider        = "SQLNCLI10";
-	
-	h.config.charset         = "UTF-8";
-	
-	Response.Charset = h.config.charset;
-	Session.CodePage = 65001;
+function createConfig(hikariConn) {
+    hikariConn.config.debug = true;
+
+    hikariConn.config.dataSource      = "CERN\\SQLEXPRESS";
+    hikariConn.config.initialCatalog  = "Microsale";
+    hikariConn.config.userId          = "sa";
+    hikariConn.config.password        = "sysadmin";
+    hikariConn.config.provider        = "SQLNCLI10";
+
+    hikariConn.config.charset         = "UTF-8";
+
+    Response.Charset = hikariConn.config.charset;
+    Session.CodePage = 65001;
 }
 
 %>

@@ -39,15 +39,22 @@ abbr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 13px;
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
   font-size: 17px;
 }
 
-h6 {
+h4, h5, h6 {
   font-size: 11px;
 }
 
@@ -60,7 +67,7 @@ p {
 }
 
 pre, code {
-  font-family: monaco, 'dejavu sans mono', 'bitstream vera sans mono', 'courier new', monospace;
+  font-family: Monaco, 'Dejavu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
 }
 
 strong {
@@ -80,7 +87,8 @@ body {
   line-height: 1.4;
   vertical-align: baseline;
   visibility: visible;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+/*  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: normal;
   color: #333;
@@ -117,8 +125,8 @@ body {
   display: none;
 }
 
-.nobullets {
-  list-style: none;
+.nobullet {
+  list-style-type: none;
 }
 
 .w100 {
@@ -141,4 +149,3 @@ ol.nobullets, ul.nobullets {
 table.fixed {
   table-layout: fixed;
 }
-

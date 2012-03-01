@@ -1,11 +1,11 @@
 <script language="javascript" runat="server">
 
 function Application_OnStart() {
-	InitProperties();
+    InitProperties();
 }
 
 function Session_onStart() {
-	CountActiveVisitors();
+    CountActiveVisitors();
 }
 
 function Session_onEnd() { }
@@ -13,16 +13,16 @@ function Session_onEnd() { }
 function Application_OnEnd() { }
 
 function InitProperties() {
-	Application("active_visitors") = 0;
-	Application("visits") = 0;
-	Application("time_lastvisit") = Date();
+    Application("active_visitors") = 0;
+    Application("visits") = 0;
+    Application("time_lastvisit") = Date();
 }
 
 function CountActiveVisitors() {
-	Application.Lock();
-	Application("visits") = Application("visits") + 1;
-	Application("time_lastvisit") = Date();
-	Application.Unlock();
+    Application.Lock();
+    Application("visits") = Application("visits") + 1;
+    Application("time_lastvisit") = Date();
+    Application.Unlock();
 }
 
 </script>

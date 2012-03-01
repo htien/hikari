@@ -1,5 +1,5 @@
 @font-face {
   font-family: 'Open Sans';
-  src: local('☺'), url('css/images/fonts/open-sans.woff') format('woff');
+  src: local('☺'), url('images/fonts/open-sans.woff') format('woff');
   font-weight: bold;
 }

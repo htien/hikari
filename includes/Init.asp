@@ -7,23 +7,27 @@ var hikari;
 var rs;
 
 try {
-	hikari = new HikariConnection;
-	createConfig(hikari);
+    hikari = new HikariConnection;
+    createConfig(hikari);
 
-	hikari.open();
+    hikari.open();
 }
 catch (ex) {
-	hikari.errorMessage = hikari.config.debug ? ex.message : "Cannot connect to database.";
+    hikari.errorMessage = hikari.config.debug ? ex.message : "Cannot connect to database.";
 }
 
 if (hikari.errorMessage.length) {
-	if (hikari.config.debug) {
-		Response.Write("<h2>" + hikari.errorMessage + "</h2>");
-		Response.End();
-	}
+    if (hikari.config.debug) {
+        Response.Write("<h2>" + hikari.errorMessage + "</h2>");
+        
+    }
+    else {
+        Response.Write("<h2>There was an error connecting to database.</h2>");
+    }
+    Response.End();
 }
 else {
-	rs = Server.CreateObject("ADODB.Recordset");
+    rs = Server.CreateObject("ADODB.Recordset");
 }
 
 %>

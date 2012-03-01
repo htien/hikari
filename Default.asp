@@ -17,31 +17,45 @@
     <title><%=hikari.config.pageTitle%></title>
 </head>
 
-<body class="gb">
+<body class="hikari">
 <div class="gA">
-	<div id="globalHeader" class="gl">
-		Global Navigator
-	</div>
-	<div id="globalContainer" class="gl">
-	<%
-        sql = "SELECT DISTINCT Br.BrandID, BrandName, Tip, Count(ProductID) AS 'ProductCount'"
-                + " FROM Brand Br"
-                + " INNER JOIN Product Pr ON Br.BrandID = Pr.BrandID"
-                + " GROUP BY Br.BrandID, BrandName, Tip";
-        rs.Open(sql, hikari.conn);
-        rs.MoveFirst();
-        while (!rs.EOF) {
-    %>
-		<%=rs("BrandID")%>, <%=rs("BrandName")%> (<%=rs("ProductCount")%>)<br />
-	<%
-            rs.MoveNext();
-        }
-        rs.Close();
-    %>
-	</div>
-	<div id="globalFooter" class="gl">
-		Global Map
-	</div>
+    <div id="globalHeader" class="gl">
+        <div class="amz-navbar">
+            <div class="amz-links">
+                <a id="hikari-logo" href="/?ref=h_logo">Hikari</a>
+                <ul id="hikari-nav-cross-links">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </div>
+            <div class="amz-discovery">
+                Discovery
+            </div>
+        </div>
+    </div>
+    <div id="globalContainer" class="gl">
+        <div class="temp">
+        <%
+            sql = "SELECT DISTINCT Br.BrandID, BrandName, Tip, Count(ProductID) AS 'ProductCount'"
+                    + " FROM Brand Br"
+                    + " INNER JOIN Product Pr ON Br.BrandID = Pr.BrandID"
+                    + " GROUP BY Br.BrandID, BrandName, Tip";
+            rs.Open(sql, hikari.conn);
+            rs.MoveFirst();
+            while (!rs.EOF) {
+        %>
+            <%=rs("BrandID")%>, <%=rs("BrandName")%> (<%=rs("ProductCount")%>)<br />
+        <%
+                rs.MoveNext();
+            }
+            rs.Close();
+        %>
+        </div>
+    </div>
+    <div id="globalFooter" class="gl">
+        Global Map
+    </div>
 </div>
 </body>
 </html>

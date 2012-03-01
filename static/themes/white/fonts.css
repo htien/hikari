@@ -1,5 +1,3 @@
-@font-face {
-  font-family: 'Open Sans';
-  src: local('☺'), url('images/fonts/open-sans.woff') format('woff');
-  font-weight: bold;
-}
+@charset "UTF-8";
+
+@font-face { font-family: 'Open Sans'; src: local('☺'), url('images/fonts/open-sans.woff') format('woff'); font-weight: bold; }

@@ -11,5 +11,7 @@
 #hikari-divider-account { right: 175px; }
 #hikari-divider-cart { right: 74px; }
 
-.temp { margin: 8px; padding: 15px; width: 28%; background-color: #fff; border: 1px solid #c4cde0; border-bottom-width: 2px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-family: Lucida Sans Unicode, Arial, sans-serif; }
+.temp { float: left; margin: 8px; padding: 15px; width: 180px; background-color: #fff; border: 1px solid #c4cde0; border-bottom-width: 2px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-family: Arial, sans-serif; }
+.temp2 { float: none; margin-left: 235px; margin-right: 255px; width: auto; }
+.temp3 { float: right; width: 200px; }
 .amz-box-path { padding-bottom: 8px; font-family: Segoe UI Light, Arial, sans-serif; font-size: 1.4em; border-bottom: 1px solid #eee; }

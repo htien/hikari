@@ -122,6 +122,39 @@
             rs.Close();
         %>
         </div>
+		<div class="temp temp3">
+			<h2 class="amz-box-path">HOME > COMPUTERS > LAPTOPS & NETBOOKS</h2>
+			<br />
+		<%
+            sql = "SELECT DISTINCT Br.BrandID, BrandName, Tip, Count(ProductID) AS 'ProductCount'"
+                    + " FROM Brand Br"
+                    + " INNER JOIN Product Pr ON Br.BrandID = Pr.BrandID"
+                    + " GROUP BY Br.BrandID, BrandName, Tip";
+            rs.Open(sql, hikari.conn);
+            rs.MoveFirst();
+            while (!rs.EOF) {
+        %>
+            <%=rs("BrandID")%>, <%=rs("BrandName")%> (<%=rs("ProductCount")%>)<br />
+        <%
+                rs.MoveNext();
+            }
+            rs.Close();
+        %>
+		</div>
+		<div class="temp temp2">
+			<h2 class="amz-box-path">Under Construction...</h2>
+			<br />
+			<p style="text-align:center">
+				<img src="/hikari/static/images/temp2.jpg" />
+			</p>
+		</div>
+		<div class="temp temp2">
+			<h2 class="amz-box-path">Under Construction...</h2>
+			<br />
+			<p style="text-align:center">
+				<img src="/hikari/static/images/temp1.jpg" />
+			</p>
+		</div>
     </div>
     <div id="globalFooter" class="gl">
         <div style="text-align:center">&copy; 1996-2012, Hikari.com, Inc. or its affiliates</div>

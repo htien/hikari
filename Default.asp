@@ -56,14 +56,14 @@
                     <div id="hikari-navsearch-container" class="amz-navsearch-container">
                         <label class="amz-navsearch-label">Search</label>
                         <form class="amz-searchbar">
-							<div class="amz-searchfield-outer amz-nav-sprite">
-								<div class="amz-searchfield-inner amz-nav-sprite">
-									<input id="searchTextbox" class="amz-searchfield-tbox" type="text" name="field-keywords" title="Search for" />
-								</div>
-							</div>
-							<div class="amz-searchfield-submit amz-nav-sprite">
-								<input type="submit" class="amz-searchfield-submitbutton" value="Go" title="Go" />
-							</div>
+                            <div class="amz-searchfield-outer amz-nav-sprite">
+                                <div class="amz-searchfield-inner amz-nav-sprite">
+                                    <input id="searchTextbox" class="amz-searchfield-tbox" type="text" name="field-keywords" title="Search for" />
+                                </div>
+                            </div>
+                            <div class="amz-searchfield-submit amz-nav-sprite">
+                                <input type="submit" class="amz-searchfield-submitbutton" value="Go" title="Go" />
+                            </div>
                         </form>
                     </div>
                     <a id="hikari-nav-account" class="amz-navbutton-outer" href="#">
@@ -102,7 +102,7 @@
         <div class="amz-globalheader-bottomborder"></div>
     </div>
     <div id="globalContainer" class="gl">
-		<div class="clear"></div>
+        <div class="clear"></div>
         <div class="temp">
             <h2 class="amz-box-path">HOME > COMPUTERS > LAPTOPS & NETBOOKS</h2>
             <br />
@@ -122,10 +122,10 @@
             rs.Close();
         %>
         </div>
-		<div class="temp temp3">
-			<h2 class="amz-box-path">HOME > COMPUTERS > LAPTOPS & NETBOOKS</h2>
-			<br />
-		<%
+        <div class="temp temp3">
+            <h2 class="amz-box-path">HOME > COMPUTERS > LAPTOPS & NETBOOKS</h2>
+            <br />
+        <%
             sql = "SELECT DISTINCT Br.BrandID, BrandName, Tip, Count(ProductID) AS 'ProductCount'"
                     + " FROM Brand Br"
                     + " INNER JOIN Product Pr ON Br.BrandID = Pr.BrandID"
@@ -140,21 +140,21 @@
             }
             rs.Close();
         %>
-		</div>
-		<div class="temp temp2">
-			<h2 class="amz-box-path">Under Construction...</h2>
-			<br />
-			<p style="text-align:center">
-				<img src="/hikari/static/images/temp2.jpg" />
-			</p>
-		</div>
-		<div class="temp temp2">
-			<h2 class="amz-box-path">Under Construction...</h2>
-			<br />
-			<p style="text-align:center">
-				<img src="/hikari/static/images/temp1.jpg" />
-			</p>
-		</div>
+        </div>
+        <div class="temp temp2">
+            <h2 class="amz-box-path">Under Construction...</h2>
+            <br />
+            <p style="text-align:center">
+                <img src="/hikari/static/images/temp2.jpg" />
+            </p>
+        </div>
+        <div class="temp temp2">
+            <h2 class="amz-box-path">Under Construction...</h2>
+            <br />
+            <p style="text-align:center">
+                <img src="/hikari/static/images/temp1.jpg" />
+            </p>
+        </div>
     </div>
     <div id="globalFooter" class="gl">
         <div style="text-align:center">&copy; 1996-2012, Hikari.com, Inc. or its affiliates</div>

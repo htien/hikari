@@ -11,6 +11,10 @@
     <meta name="keywords" content="light, theme" />
     <meta name="description" content="Linh Kien May Tinh" />
     <base href="/hikari/" />
+    <script type="text/javascript">
+        new Image().src = "/hikari/static/themes/white/images/BeaconSprite-US-01._V141013396_.png";
+        new Image().src = "/hikari/static/themes/white/images/nav-pop-h._V155853593_.png";
+    </script>
     <script type="text/javascript" src="static/js/jquery-1.7.1.js"></script>
     <script type="text/javascript" src="static/themes/white/main.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico" />
@@ -20,18 +24,14 @@
 
 <body class="hikari">
 <div class="gA">
-    <div id="globalHeader" class="gl">
+    <div id="globalHeader" class="gl amz-global-header">
         <div class="amz-discovery">
             <div class="amz-links">
                 <a id="hikari-nav-logo" class="amz-nav-sprite" href="?ref=h_logo">Hikari</a>
                 <ul class="amz-cross-links">
-                    <li class="amz-xs-link first"><a href="#">Link 1</a></li>
-                    <li class="amz-xs-link"><a href="#">Link 2</a></li>
-                    <li class="amz-xs-link"><a href="#">Link 3</a></li>
-                    <li class="amz-xs-link"><a href="#">Link 4</a></li>
-                    <li class="amz-xs-link"><a href="#">Link 5</a></li>
-                    <li class="amz-xs-link"><a href="#">Link 6</a></li>
-                    <li class="amz-xs-link"><a href="#">Link 7</a></li>
+                    <li class="amz-xs-link first"><a href="#">Today's Deals</a></li>
+                    <li class="amz-xs-link"><a href="#">Gift Cards</a></li>
+                    <li class="amz-xs-link"><a href="#">About</a></li>
                 </ul>
                 <div class="amz-welcome-row">
                     <div class="amz-text">Welcome you to Hikari Electronics Store!</div>
@@ -53,10 +53,23 @@
                         </span>
                         <span class="amz-down-arrow amz-nav-sprite"></span>
                     </a>
+                    <div id="hikari-navsearch-container" class="amz-navsearch-container">
+                        <label class="amz-navsearch-label">Search</label>
+                        <form class="amz-searchbar">
+							<div class="amz-searchfield-outer amz-nav-sprite">
+								<div class="amz-searchfield-inner amz-nav-sprite">
+									<input id="searchTextbox" class="amz-searchfield-tbox" type="text" name="field-keywords" title="Search for" />
+								</div>
+							</div>
+							<div class="amz-searchfield-submit amz-nav-sprite">
+								<input type="submit" class="amz-searchfield-submitbutton" value="Go" title="Go" />
+							</div>
+                        </form>
+                    </div>
                     <a id="hikari-nav-account" class="amz-navbutton-outer" href="#">
                         <span class="amz-navbutton amz-nav-sprite">
                             <span class="amz-navbutton-inner amz-nav-sprite">
-                                <span class="amz-navbutton-title">Hello, <span class="amz-navbutton-em">Tien</span></span>
+                                <span class="amz-navbutton-title">Hello, <span class="amz-navbutton-em">Lien</span></span>
                                 <span class="amz-navbutton-title amz-navbutton-strong">Your Account</span>
                             </span>
                         </span>
@@ -86,9 +99,13 @@
                 </div>
             </div>
         </div>
+        <div class="amz-globalheader-bottomborder"></div>
     </div>
     <div id="globalContainer" class="gl">
+		<div class="clear"></div>
         <div class="temp">
+            <h2 class="amz-box-path">HOME > COMPUTERS > LAPTOPS & NETBOOKS</h2>
+            <br />
         <%
             sql = "SELECT DISTINCT Br.BrandID, BrandName, Tip, Count(ProductID) AS 'ProductCount'"
                     + " FROM Brand Br"
@@ -107,7 +124,7 @@
         </div>
     </div>
     <div id="globalFooter" class="gl">
-        Global Map
+        <div style="text-align:center">&copy; 1996-2012, Hikari.com, Inc. or its affiliates</div>
     </div>
 </div>
 </body>

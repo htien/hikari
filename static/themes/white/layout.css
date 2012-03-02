@@ -4,7 +4,10 @@
 
 .hikari .gA,
 .hikari .gl { position: relative; }
+.hikari .amz-globalheader-bottomborder { clear: both; overflow:hidden; height: 1px; }
+.hikari #globalHeader { background-color: #fff; border-bottom: 1px solid #c4cde0; box-shadow: 0 0 3px rgba(0,0,0,.1); -webkit-box-shadow: 0 0 3px rgba(0,0,0,.1); -moz-box-shadow: 0 0 3px rgba(0,0,0,.1); }
 .hikari #globalContainer { height: auto; min-height: 100%; }
+.hikari #globalFooter { clear: left; }
 .hikari .amz-discovery { zoom: 1; }
 .hikari .amz-links,
 .hikari .amz-navbar { position: relative; }
@@ -34,3 +37,11 @@
 .hikari .amz-navbutton-inner .amz-cart-20 { font-size: 14px; }
 .hikari .amz-navbutton-inner .amz-cart-100 { font-size: 11px; }
 .hikari .amz-nav-divider { position: absolute; top: 11px; overflow: hidden; width: 1px; height: 34px; border-right: 1px solid #ddd; }
+.hikari .amz-navsearch-container { margin: 0 352px 0 177px; }
+.hikari .amz-navsearch-container .amz-navsearch-label { position: absolute; top: 22px; font-weight: bold; }
+.hikari .amz-navsearch-container .amz-searchbar { position: relative; display: block; margin: 10px 0 0 50px; height: 34px; }
+.hikari .amz-navsearch-container .amz-searchfield-outer { margin-right: 39px; padding-left: 5px; height: 34px; background-position: -10px -120px; background-repeat: no-repeat; }
+.hikari .amz-navsearch-container .amz-searchfield-inner { height: 34px; background-color: #fff; background-position: 0 -550px; background-repeat: repeat-x; }
+.hikari .amz-navsearch-container .amz-searchfield-tbox { margin-top: 7px; padding: 0; width: 100%; height: 23px; background: transparent; border: 0; outline: 0; font-size: 12pt; }
+.hikari .amz-navsearch-container .amz-searchfield-submit { position: absolute; right: 0; top: 0; overflow: hidden; padding-left: 3px; height: 34px; background-position: -33px -120px; }
+.hikari .amz-navsearch-container .amz-searchfield-submitbutton { width: 39px; height: 34px; background: none; border: 0; color: #fff; cursor: pointer; font-weight: bold; }

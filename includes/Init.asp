@@ -19,7 +19,6 @@ catch (ex) {
 if (hikari.errorMessage.length) {
     if (hikari.config.debug) {
         Response.Write("<h2>" + hikari.errorMessage + "</h2>");
-        
     }
     else {
         Response.Write("<h2>There was an error connecting to database.</h2>");

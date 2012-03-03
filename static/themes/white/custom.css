@@ -2,6 +2,8 @@
 
 /*----- HIKARI THEME -----*/
 
+#hikari { margin: 0 auto; width: 981px; min-width: 981px; }
+#hikari #globalHeader { border-width: 0 1px 1px; }
 #hikari-nav-logo { position: absolute; bottom: -4px; left: 10px; display: block; width: 100px; height: 30px; text-indent: -500px; background-position: -10px -10px; }
 #hikari-nav-startmenu { left: 15px; width: 112px; }
 #hikari-nav-account { right: 178px; width: 125px; }
@@ -11,7 +13,4 @@
 #hikari-divider-account { right: 175px; }
 #hikari-divider-cart { right: 74px; }
 
-.temp { float: left; margin: 8px; padding: 15px; width: 180px; background-color: #fff; border: 1px solid #c4cde0; border-bottom-width: 2px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-family: Arial, sans-serif; }
-.temp2 { float: none; margin-left: 235px; margin-right: 255px; width: auto; }
-.temp3 { float: right; width: 200px; }
-.amz-box-path { padding-bottom: 8px; font-family: Segoe UI Light, Arial, sans-serif; font-size: 1.4em; border-bottom: 1px solid #eee; }
+#pagelet_ads .pad { padding: 5px 0 0; }

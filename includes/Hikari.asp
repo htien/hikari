@@ -10,6 +10,7 @@ HikariConfig = function(dataSource, initialCatalog, userId, password, provider) 
     this.pageTitle = "Hikari Electronics";
     this.version = "1.0";
     this.author = "Phuong Lien";
+    this.appPath = "/hikari"
 
     this.dataSource = dataSource || ".";
     this.initialCatalog = initialCatalog || "";

@@ -30,13 +30,14 @@ pre, code { font-family: Monaco, 'Dejavu Sans Mono', 'Bitstream Vera Sans Mono',
 strong { font-weight: bold; }
 html { overflow-x: auto; overflow-y: scroll; }
 html, body { height: 100%; }
-body { min-width: 951px; line-height: 16px; color: #333; background-color: #e7ebf2; font-family: Lucida Grande, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; vertical-align: baseline; visibility: visible; }
+body { line-height: 16px; color: #333; background-color: #e7ebf2; font-family: Lucida Grande, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; vertical-align: baseline; visibility: visible; }
 
 .alignleft { float: left; }
 .alignright { float: right; }
 .clear, .section { clear: both; display: block; overflow: hidden; }
 .clear:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
 .fixed_elem { position: fixed !important; }
+.hidden_elem { display: none !important; }
 .hidden { display: none; }
 .nobullet { list-style-type: none; }
 .w100 { width: 100%; }

@@ -16,8 +16,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner { padding: 1px 2px; 
 input[type="button"],
 input[type="submit"],
 input[type="image"], label { cursor: default; }
-a, a:visited, a:focus { color: #04b; text-decoration: none; }
-a:hover, a:active { color: #e47911 /*#d2480e*/; text-decoration: underline; }
+a { color: #04b; cursor: pointer; text-decoration: none; }
+a:hover { color: #e47911 /*#d2480e*/; text-decoration: underline; }
 abbr { border-bottom: 1px dotted #a3756e; }
 h1, h2, h3, h4, h5, h6 { font-family: Lucida Grande, Helvetica, Arial, sans-serif; }
 h1 { font-size: 27px; }
@@ -25,6 +25,7 @@ h2 { font-size: 23px; }
 h3 { font-size: 17px; }
 h4, h5, h6 { font-size: 11px; }
 img, div { max-width: 100%; }
+label { color: #666; cursor: pointer; font-weight: bold; vertical-align: middle; }
 p { margin-bottom: .85em; }
 pre, code { font-family: Monaco, 'Dejavu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace; }
 strong { font-weight: bold; }
@@ -32,13 +33,19 @@ html { overflow-x: auto; overflow-y: scroll; }
 html, body { height: 100%; }
 body { line-height: 16px; color: #333; background-color: #e7ebf2; font-family: Lucida Grande, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; vertical-align: baseline; visibility: visible; }
 
+.aero { opacity: .5; }
 .alignleft { float: left; }
 .alignright { float: right; }
-.clear, .section { clear: both; display: block; overflow: hidden; }
-.clear:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.center { margin-left: auto; margin-right: auto; }
+.clearfix, .section { clear: both; display: block; overflow: hidden; }
+.clearfix { zoom: 1; }
+.clearfix:after { clear: both; content: "."; display: block; height: 0; line-height:0; font-size: 0; visibility: hidden; }
+.direction_ltr { direction: ltr; }
+.direction_rtl { direction: rtl; }
 .fixed_elem { position: fixed !important; }
 .hidden_elem { display: none !important; }
 .hidden { display: none; }
+.invisible_elem { visibility: hidden; }
 .nobullet { list-style-type: none; }
 .w100 { width: 100%; }
 .widefat { clear: both; width: 100%; }

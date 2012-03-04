@@ -4,9 +4,10 @@
 
 .hikari .gA,
 .hikari .gl { position: relative; }
+.hikari .gA { min-height: 100%; }
 #globalHeader { background-color: #fff; border-color: #c4cde0; border-style: solid; border-width: 0 0 1px; box-shadow: 0 0 3px rgba(0,0,0,.1); -webkit-box-shadow: 0 0 3px rgba(0,0,0,.1); -moz-box-shadow: 0 0 3px rgba(0,0,0,.1); }
-#globalContainer { height: auto; min-height: 100%; }
-#globalFooter { clear: left; }
+#globalContainer { padding-bottom: 70px; height: auto; min-height: 100%; zoom: 1; }
+#globalFooter { position: absolute; right: 0; bottom: 0; left: 0; clear: left; height: 55px; }
 .hikari .amz-globalheader-bottomborder { clear: both; overflow:hidden; height: 1px; }
 .hikari .amz-discovery { zoom: 1; }
 .hikari .amz-links,
@@ -38,7 +39,7 @@
 .hikari .amz-navbutton-inner .amz-cart-100 { font-size: 11px; }
 .hikari .amz-nav-divider { position: absolute; top: 11px; overflow: hidden; width: 1px; height: 34px; border-right: 1px solid #ddd; }
 .hikari .amz-navsearch-container { margin: 0 352px 0 177px; }
-.hikari .amz-navsearch-container .amz-navsearch-label { position: absolute; top: 22px; font-weight: bold; }
+.hikari .amz-navsearch-container .amz-navsearch-label { position: absolute; top: 22px; }
 .hikari .amz-navsearch-container .amz-searchbar { position: relative; display: block; margin: 10px 0 0 50px; height: 34px; }
 .hikari .amz-navsearch-container .amz-searchfield-outer { margin-right: 39px; padding-left: 5px; height: 34px; background-position: -10px -120px; background-repeat: no-repeat; }
 .hikari .amz-navsearch-container .amz-searchfield-inner { height: 34px; background-color: #fff; background-position: 0 -550px; background-repeat: repeat-x; }
@@ -53,8 +54,15 @@
 .hikari .amz-rightcol { float: right; width: 170px; word-wrap: break-word; }
 .hikari .amz-box,
 .hikari .amz-sidebox { background-color: #fff; border: 1px solid #c4cde0; border-bottom-width: 2px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
+.hikari .amz-box:hover,
+.hikari .amz-sidebox:hover { border-color: #97a4c2; }
 .hikari .amz-box { margin-top: 8px; }
 .hikari .amz-box.first { margin-top: 0; }
 .hikari .amz-box .title { margin: 8px 10px .35em; padding-bottom: 2px; line-height: 1.167; border-bottom: 1px solid #ebebeb; color: #d2480e; font-family: Segoe UI Light, Helvetica, Arial, sans-serif; font-size: 21px; }
 .hikari .amz-sidebox .title { margin: 5px 5px 0; padding: 2px 5px; background-color: #edeff4; font-family: Lucida Grande, Tahoma, sans-serif; font-size: 9px; font-weight: bold; text-transform: uppercase; }
-.hikari .amz-sidebox .pad { margin: 0 5px 8px; padding: 5px 5px 0 5px; }
+.hikari .amz-sidebox .pad { margin: 0 5px 8px; padding: 5px 5px 0; }
+
+img,
+#globalHeader, #globalFooter,
+.hikari .amz-box .title,
+.hikari .amz-sidebox .title { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; -khtml-user-select: none; }

@@ -14,6 +14,7 @@
     <script type="text/javascript">
         new Image().src = "<%=hikari.config.appPath%>/static/themes/white/images/BeaconSprite-US-01._V141013396_.png";
         new Image().src = "<%=hikari.config.appPath%>/static/themes/white/images/nav-pop-h._V155853593_.png";
+        new Image().src = "<%=hikari.config.appPath%>/static/themes/white/images/apple_gradient_texture.png";
     </script>
     <script type="text/javascript" src="<%=hikari.config.appPath%>/static/js/jquery-1.7.1.js"></script>
     <script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/main.js"></script>
@@ -36,7 +37,7 @@
                 <div class="amz-welcome-row">
                     <div class="amz-text">Welcome you to Hikari Electronics Store!</div>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </div>
             <div class="amz-navbar">
                 <div class="amz-logo-borderfade">
@@ -54,7 +55,7 @@
                         <span class="amz-down-arrow amz-nav-sprite"></span>
                     </a>
                     <div id="hikari-navsearch-container" class="amz-navsearch-container">
-                        <label class="amz-navsearch-label">Search</label>
+                        <label class="amz-navsearch-label" for="searchTextbox">Search</label>
                         <form class="amz-searchbar" method="get" action="">
                             <div class="amz-searchfield-outer amz-nav-sprite">
                                 <div class="amz-searchfield-inner amz-nav-sprite">
@@ -145,12 +146,30 @@
                         <div style="text-align:center"><img src="/hikari/static/images/tmp/temp1.jpg" alt="" /></div>
                     </div>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
     <div id="globalFooter" class="gl">
-        <div style="text-align:center">&copy; 1996-2012, Hikari.com, Inc. or its affiliates</div>
+        <div id="pagelet_copyrights" class="clearfix">
+            <ul class="stores">
+                <li>Hikari Store (V.N.)</li>
+            </ul>
+            <ul class="help">
+                <li class="first"><a href="#">Help</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Security Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="separator clearfix"></div>
+            <ul class="copyrights">
+                <li class="first">Copyright &copy; 2012, Hikari Electronics Inc. All rights reserved.</li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="order-by-phone">You can also order from Hikari Store by calling (?).</p>
+        </div>
     </div>
 </div>
 </body>

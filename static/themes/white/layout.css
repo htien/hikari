@@ -58,10 +58,10 @@
 .hikari .amz-sidebox:hover { border-color: #97a4c2; }
 .hikari .amz-box { margin-top: 8px; }
 .hikari .amz-box.first { margin-top: 0; }
-.hikari .amz-box .title { margin: 8px 10px .35em; padding-bottom: 2px; line-height: 1.167; border-bottom: 1px solid #ebebeb; color: #d2480e; font-family: Segoe UI Light, Helvetica, Arial, sans-serif; font-size: 21px; }
+.hikari .amz-box .title-bar { margin: 8px 10px .35em; padding-bottom: 2px; line-height: 1.167; border-bottom: 1px solid #ebebeb; color: #d2480e; font-family: Segoe UI Light, Helvetica, Arial, sans-serif; font-size: 21px; }
 .hikari .amz-sidebox { margin-top: 6px; }
 .hikari .amz-sidebox.first { margin-top: 0; }
-.hikari .amz-sidebox .title { margin: 5px 5px 0; padding: 2px 5px; background-color: #edeff4; font-family: Lucida Grande, Tahoma, sans-serif; font-size: 9px; font-weight: bold; text-transform: uppercase; }
+.hikari .amz-sidebox .title-bar { margin: 5px 5px 0; padding: 2px 5px; /*background-color: #edeff4;*/ font-family: Lucida Grande, Tahoma, sans-serif; font-size: 9px; font-weight: bold; text-transform: uppercase; }
 .hikari .amz-sidebox .pad { margin: 0 5px 8px; padding: 5px 5px 0; }
 .hikari .amz-sidebox .tile { padding: 5px 0 10px; background: url("data:image/gif;base64,R0lGODdhpAABAPAAAMzMzP///ywAAAAApAABAEACD4yPCMvtD6OctNqLc9qnAAA7") no-repeat; font-size: 11px; }
 .hikari .amz-sidebox .tile.first { padding-top: 0; background-image: none; }
@@ -69,6 +69,14 @@
 .hikari .amz-sidebox .tile div { margin: 15px auto; text-align: center; }
 .hikari .amz-sidebox .tile div img { display: inline-block; }
 .hikari .amz-sidebox .tile p { margin: 5px 15px 0; line-height: 14px; color: #666; }
+.hikari .amz-sidebox .navigation-list.first { margin-top: 5px; }
+.hikari .amz-sidebox .navigation-list { padding-bottom: 5px; }
+.hikari .amz-sidebox .navigation-list a { color: #333; }
+.hikari .amz-sidebox .navigation-list h3 { font-size: 12px; font-weight: bold; }
+.hikari .amz-sidebox .navigation-list h3 a { display: block; padding: 0 10px; line-height: 24px; background: #689 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAcUlEQVR42p2SPQrAIAxGPYF38SzunqF7p+ydlZw2/SypFAmhRHiDmsfnT5KILI7zKqABAh2Qzsu37i3OoIIB2GDofl6SLvAP6iPN6D1BMJzEkvTMvEuO2KZEluSINKVuSY7YQ0mhO4VeL/BPwY4I9d4NtLaDlKXEYzwAAAAASUVORK5CYII=") no-repeat 146px 5px; color: #fff; text-decoration: none; }
+.hikari .amz-sidebox .navigation-list ul { margin-top: 5px; line-height: 12px; }
+.hikari .amz-sidebox .navigation-list li a { padding: 5px 11px 5px 12px;  }
+.hikari .amz-sidebox .navigation-list li a:hover { background-color: #edeff4; font-weight: bold; text-decoration: none; }
 
 img,
 #globalHeader, #globalFooter,

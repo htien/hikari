@@ -103,40 +103,35 @@
         <div id="mainContainer" class="amz-container hasLeftCol">
             <div class="amz-leftcolcontainer">
                 <div class="amz-leftcol">
-                    <div class="amz-sidebox first">
-                        <h2 class="title">Categories</h2>
-                        <div class="pad">
-                            <%
-                                sql = "SELECT DISTINCT Br.BrandID, BrandName, Tip, Count(ProductID) AS 'ProductCount'"
-                                        + " FROM Brand Br"
-                                        + " INNER JOIN Product Pr ON Br.BrandID = Pr.BrandID"
-                                        + " GROUP BY Br.BrandID, BrandName, Tip";
-                                rs.Open(sql, hikari.conn);
-                                rs.MoveFirst();
-                                while (!rs.EOF) {
-                            %>
-                            <%=rs("BrandID")%>, <%=rs("BrandName")%> (<%=rs("ProductCount")%>)<br />
-                            <%
-                                    rs.MoveNext();
-                                }
-                                rs.Close();
-                            %>
-                        </div>
-                    </div>
-                    <div id="pagelet_ads" class="amz-sidebox">
-                        <h2 class="title">Advertisement</h2>
-                        <div class="pad">
-                            <img src="/hikari/static/images/tmp/camera-newincamphoto2_300x75._.png" alt="" />
-                            <img src="/hikari/static/images/tmp/mass-effect3-pre-order_300x120._V140235086_.jpg" alt="" />
-                            <img src="/hikari/static/images/tmp/bose_soundlink_wireless_mobile_speaker_300x120._V140173257_.gif" alt="" />
+                    <div id="pagelet_categories" class="amz-sidebox first">
+                        <h2 class="title-bar">Departments</h2>
+                        <div class="navigation-list first">
+                            <h3><a>Branches</a></h3>
+                            <ul>
+                                <%
+                                    sql = "SELECT DISTINCT Br.BrandID, BrandName, Tip, Count(ProductID) AS 'ProductCount'"
+                                            + " FROM Brand Br"
+                                            + " INNER JOIN Product Pr ON Br.BrandID = Pr.BrandID"
+                                            + " GROUP BY Br.BrandID, BrandName, Tip";
+                                    rs.Open(sql, hikari.conn);
+                                    rs.MoveFirst();
+                                    while (!rs.EOF) {
+                                %>
+                                <li><a><%=rs("BrandName")%> (<%=rs("ProductCount")%>)</a></li>
+                                <%
+                                        rs.MoveNext();
+                                    }
+                                    rs.Close();
+                                %>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="amz-contentcol hasRightCol">
                 <div class="amz-rightcol">
-                    <div id="pagelet_ads_2" class="amz-sidebox first">
-                        <h2 class="title">Advertisement</h2>
+                    <div id="pagelet_ads" class="amz-sidebox first">
+                        <h2 class="title-bar">Advertisement</h2>
                         <div class="tile first">
                             <a class="block">
                                 <h3>Education Pricing</h3>
@@ -147,21 +142,16 @@
                                 <p><span class="more">Learn more</span></p>
                             </a>
                         </div>
-                        <div class="tile">
-                            <a class="block">
-                                <h3>Education Pricing</h3>
-                                <div>
-                                    <img src="/hikari/static/images/tmp/macbook_air.jpg" alt="" />
-                                </div>
-                                <p>College students and teachers, save on a new Mac, software and more.</p>
-                                <p><span class="more">Learn more</span></p>
-                            </a>
+                        <div class="pad">
+                            <img src="/hikari/static/images/tmp/camera-newincamphoto2_300x75._.png" alt="" />
+                            <img src="/hikari/static/images/tmp/mass-effect3-pre-order_300x120._V140235086_.jpg" alt="" />
+                            <img src="/hikari/static/images/tmp/bose_soundlink_wireless_mobile_speaker_300x120._V140173257_.gif" alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="amz-contentarea">
                     <div id="pagelet_centerA" class="amz-box first">
-                        <h2 class="title">Hikari Store Best Sellers</h2>
+                        <h2 class="title-bar">Hikari Store Best Sellers</h2>
                         <div style="text-align:center"><img src="/hikari/static/images/tmp/temp2.jpg" alt="" /></div>
                         <div style="text-align:center"><img src="/hikari/static/images/tmp/temp1.jpg" alt="" /></div>
                     </div>

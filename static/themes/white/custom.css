@@ -15,9 +15,6 @@ body {background-image: url(images/apple_gradient_texture.png); }
 #hikari-divider-account { right: 175px; }
 #hikari-divider-cart { right: 74px; }
 
-#pagelet_ads .pad,
-#pagelet_ads_2 .pad { padding: 5px 0 0; }
-
 #pagelet_copyrights { line-height: 12px; color: #7c8395; font-size: 11px; }
 #pagelet_copyrights a { color: #08c; }
 #pagelet_copyrights .stores,
@@ -33,3 +30,9 @@ body {background-image: url(images/apple_gradient_texture.png); }
 #pagelet_copyrights .stores li.first,
 #pagelet_copyrights .copyrights li.first { margin-left: 0; padding-left: 0; border-left: 0; }
 #pagelet_copyrights .separator { margin-bottom: 7px; padding-top: 7px; height: 1px; border-bottom: 3px double#ccc; }
+
+#pagelet_ads .pad,
+#pagelet_ads_2 .pad { padding: 5px 0 0; }
+
+#pagelet_categories li { }
+#pagelet_categories li a { display: block; }

@@ -36,6 +36,7 @@ body { line-height: 16px; color: #333; background-color: #e7ebf2; font-family: L
 .aero { opacity: .5; }
 .alignleft { float: left; }
 .alignright { float: right; }
+.block { display: block; }
 .center { margin-left: auto; margin-right: auto; }
 .clearfix, .section { clear: both; display: block; overflow: hidden; }
 .clearfix { zoom: 1; }
@@ -50,6 +51,10 @@ body { line-height: 16px; color: #333; background-color: #e7ebf2; font-family: L
 .w100 { width: 100%; }
 .widefat { clear: both; width: 100%; }
 .widefat * { word-wrap: break-word; }
+a.block { color: #333; text-decoration: none; }
+a.block span.link, a.block span.more { color: #04b; }
+a.block:hover span.link, a.block:hover span.more { text-decoration: underline; }
+a.more, a.block span.more { padding-right: 7px; background: url("data:image/gif;base64,R0lGODlhBAAHAIAAAACIzP///yH5BAEHAAEALAAAAAAEAAcAAAIIRA4WaeyrVCgAOw==") no-repeat 100% 60%; zoom: 1; }
 ol.nobullet, ul.nobullet { padding-left: 0; }
 table.fixed { table-layout: fixed; }
 

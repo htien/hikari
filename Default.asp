@@ -1,15 +1,12 @@
 <!--#include file="includes/Init.asp"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=<%=hikari.config.charset%>" />
-    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
-    <meta http-equiv="Expires" content="-1" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, chrome=1" />
+    <meta charset="<%=hikari.config.charset%>" />
     <meta name="author" content="<%=hikari.config.author%>" />
-    <meta name="keywords" content="light, theme" />
     <meta name="description" content="Linh Kien May Tinh" />
+    <meta name="generator" content="Notepad++ v5.9.8" />
+    <meta name="keywords" content="light, theme" />
     <base href="<%=hikari.config.appPath%>/" />
     <script type="text/javascript">
         new Image().src = "<%=hikari.config.appPath%>/static/themes/white/images/BeaconSprite-US-01._V141013396_.png";
@@ -56,7 +53,7 @@
                     </a>
                     <div id="hikari-navsearch-container" class="amz-navsearch-container">
                         <label class="amz-navsearch-label" for="searchTextbox">Search</label>
-                        <form class="amz-searchbar" method="get" action="">
+                        <form class="amz-searchbar" method="get" action="?">
                             <div class="amz-searchfield-outer amz-nav-sprite">
                                 <div class="amz-searchfield-inner amz-nav-sprite">
                                     <input id="searchTextbox" class="amz-searchfield-tbox" type="text" name="field-keywords" title="Search for" />
@@ -106,7 +103,7 @@
         <div id="mainContainer" class="amz-container hasLeftCol">
             <div class="amz-leftcolcontainer">
                 <div class="amz-leftcol">
-                    <div class="amz-sidebox">
+                    <div class="amz-sidebox first">
                         <h2 class="title">Categories</h2>
                         <div class="pad">
                             <%
@@ -126,16 +123,39 @@
                             %>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="amz-contentcol hasRightCol">
-                <div class="amz-rightcol">
                     <div id="pagelet_ads" class="amz-sidebox">
                         <h2 class="title">Advertisement</h2>
                         <div class="pad">
                             <img src="/hikari/static/images/tmp/camera-newincamphoto2_300x75._.png" alt="" />
                             <img src="/hikari/static/images/tmp/mass-effect3-pre-order_300x120._V140235086_.jpg" alt="" />
                             <img src="/hikari/static/images/tmp/bose_soundlink_wireless_mobile_speaker_300x120._V140173257_.gif" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="amz-contentcol hasRightCol">
+                <div class="amz-rightcol">
+                    <div id="pagelet_ads_2" class="amz-sidebox first">
+                        <h2 class="title">Advertisement</h2>
+                        <div class="tile first">
+                            <a class="block">
+                                <h3>Education Pricing</h3>
+                                <div>
+                                    <img src="/hikari/static/images/tmp/macbook_air.jpg" alt="" />
+                                </div>
+                                <p>College students and teachers, save on a new Mac, software and more.</p>
+                                <p><span class="more">Learn more</span></p>
+                            </a>
+                        </div>
+                        <div class="tile">
+                            <a class="block">
+                                <h3>Education Pricing</h3>
+                                <div>
+                                    <img src="/hikari/static/images/tmp/macbook_air.jpg" alt="" />
+                                </div>
+                                <p>College students and teachers, save on a new Mac, software and more.</p>
+                                <p><span class="more">Learn more</span></p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -153,22 +173,23 @@
     <div id="globalFooter" class="gl">
         <div id="pagelet_copyrights" class="clearfix">
             <ul class="stores">
-                <li>Hikari Store (V.N.)</li>
+                <li class="first">Hikari Store (V.N.)</li>
+                <li><a>Change Language</a></li>
             </ul>
             <ul class="help">
                 <li class="first"><a href="#">Help</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Site Map</a></li>
-                <li><a href="#">Security Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a>Account</a></li>
+                <li><a>Site Map</a></li>
+                <li><a>Security Policy</a></li>
+                <li><a>Contact Us</a></li>
             </ul>
             <div class="separator clearfix"></div>
             <ul class="copyrights">
-                <li class="first">Copyright &copy; 2012, Hikari Electronics Inc. All rights reserved.</li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li class="first">Copyright &#169; 2012, Hikari Electronics Inc. All rights reserved.</li>
+                <li><a>Terms of Use</a></li>
+                <li><a>Privacy Policy</a></li>
             </ul>
-            <p class="order-by-phone">You can also order from Hikari Store by calling (?).</p>
+            <span class="order-by-phone">You can also order from Hikari Store by calling (?).</span>
         </div>
     </div>
 </div>

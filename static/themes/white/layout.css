@@ -75,8 +75,8 @@
 .hikari .amz-sidebox .navigation-list h3 { font-size: 12px; font-weight: bold; }
 .hikari .amz-sidebox .navigation-list h3 a { display: block; padding: 0 10px; line-height: 24px; background: #689 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAcUlEQVR42p2SPQrAIAxGPYF38SzunqF7p+ydlZw2/SypFAmhRHiDmsfnT5KILI7zKqABAh2Qzsu37i3OoIIB2GDofl6SLvAP6iPN6D1BMJzEkvTMvEuO2KZEluSINKVuSY7YQ0mhO4VeL/BPwY4I9d4NtLaDlKXEYzwAAAAASUVORK5CYII=") no-repeat 146px 5px; color: #fff; text-decoration: none; }
 .hikari .amz-sidebox .navigation-list ul { margin-top: 5px; line-height: 12px; }
-.hikari .amz-sidebox .navigation-list li a { padding: 5px 11px 5px 12px;  }
-.hikari .amz-sidebox .navigation-list li a:hover { background-color: #edeff4; font-weight: bold; text-decoration: none; }
+.hikari .amz-sidebox .navigation-list li a { padding: 5px 11px 5px 15px; color: #666; font-size: 11px; font-weight: bold; }
+.hikari .amz-sidebox .navigation-list li a:hover { background-color: #ffebbf; color: #333; text-decoration: none; }
 
 img,
 #globalHeader, #globalFooter,

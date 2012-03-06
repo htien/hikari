@@ -2,7 +2,7 @@
 
 /*----- HIKARI THEME -----*/
 
-body {background-image: url(images/apple_gradient_texture.png); }
+body { /*background-image: url(images/apple_gradient_texture.png);*/ }
 
 #hikari { margin: 0 auto; width: 981px; min-width: 981px; }
 #hikari #globalHeader { border-width: 0 1px 1px; }

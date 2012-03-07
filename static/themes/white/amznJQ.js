@@ -428,7 +428,7 @@
             }
             return $.extend(true, {}, {cursor: cursor[c], priorCursors: pCursors});
         };
-        var check = function(imediately) {
+        var check = function(immediately) {
             for (var i = 0; i < regions.length; i++) {
                 var r = regions[i];
                 var inside = $.grep(r.rects, function(n) {
@@ -510,7 +510,7 @@
                 return pool.pop().css({display: "block", top: jqObj.offset().top, left: jqObj.offset().left, width: jqObj.outerWidth(), height: jqObj.outerHeight(), zIndex: Number(jqObj.css("z-index")) - 1});
             },
             checkin: function(iframe) {
-                poo.push(iframe.css('display', 'none'));
+                pool.push(iframe.css('display', 'none'));
             }
         };
     }();
@@ -1634,10 +1634,9 @@
     });
 
     var navInitJSInteraction = function() {
-        alert(1);
-        var $ = jQuery, $id = function (elemID) {
+        var $ = jQuery, $id = (function(elemID) {
             return $(byID(elemID));
-        };
+        });
         var isIE6 = $.browser.msie && parseInt($.browser.version) <= 6;
         var areaMapper = (function() {
             if (!agent.kindleFire) {
@@ -1751,36 +1750,44 @@
             };
             return $.AmazonPopover.support && $.AmazonPopover.support.skinCallback ? callback : callback();
         };
+        
+        var initShopByDepartments = function() {
+        };
+
+        var initYourAccount = function() {
+            if (!$id('hikari-nav-account').length || !$id('nav_account_flyout')) {
+                return;
+            }
+            var id = 'hikari-nav-account', button = new NavButton(id), jQButton = $id(id);
+            var onShow = function() {
+                button.onShow();
+                areaMapper.disable('#nav_account_flyout');
+                window._navbar.loadDynamicMenusConditionally();
+            }, onHide = function() {
+                areaMapper.enable();
+                button.onHide();
+            };
+            button.registerTrigger({localContent: '#nav_account_flyout', locationAlign: 'left', locationOffset: [isIE6 ? -3 : 0, 0], skin: SKIN(jQButton, 0), onShow: onShow, onHide: onHide, followLink: window._navbar.yourAccountClickable && !agent.touch});
+        };
+        
+        var navbarAPIError = "no error";
+        window.navbar.error = function() {
+            return navbarAPIError;
+        };
 
         initYourAccount();
+        
+        (function() {
+            var mouseHookTriggered = false;
+            window._navbar.loadDynamicMenusConditionally = function() {
+                mouseHookTriggered = true;
+                return true;
+            };
+        })();
 
         amznJQ.declareAvailable("navbarJS-beacon");
         amznJQ.declareAvailable("navbarJS-jQuery");
         amznJQ.declareAvailable("navbarJSInteraction");
-    };
-
-    var initShopByDepartments = function() {
-    };
-
-    var initYourAccount = function() {
-        if (!$id('hikari-nav-account').length || !$id('nav_account_flyout')) {
-            return;
-        }
-        var id = 'hikari-nav-account', button = new NavButton(id), jQButton = $id(id);
-        var onShow = function() {
-            button.onShow();
-            areaMapper.disable('#nav_account_flyout');
-            window._navbar.loadDynamicMenusConditionally();
-        }, onHide = function() {
-            areaMapper.enable();
-            button.onHide();
-        };
-        button.registerTrigger({localContent: '#nav_account_flyout', locationAlign: 'left', locationOffset: [isIE6 ? 3 : 0, 0], skin: SKIN(jQButton, 0), onShow: onShow, onHide: onHide, followLink: window._navbar.yourAccountClickable && !agent.touch});
-    };
-
-    var navbarAPIError = "no error";
-    window.navbar.error = function() {
-        return navbarAPIError;
     };
 
     amznJQ.available("popover", function() {

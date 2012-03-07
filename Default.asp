@@ -66,6 +66,24 @@
                 strings: {}
             };
         }());
+        
+        window._navbarSpriteUrl = "http://g-ecx.images-amazon.com/images/G/01/gno/beacon/BeaconSprite-US-01._V141013396_.png";
+        amznJQ.available('popover', function() {
+            amznJQ.available('navbarBTF', function() {
+                var ie6 = jQuery.browser.msie && parseInt(jQuery.browser.version) <= 6,
+                    h = new Image(), v = new Image(), c = 0, b, f, bi,
+                    fn = function(p){ switch(typeof p){ case'boolean':{b=p;bi=1;break} case'function':{f=p} default:{c++} } if(bi&&c>2)f(b) };
+                h.onload = fn; v.onload = fn;
+                h.src = (ie6 ? 'http://g-ecx.images-amazon.com/images/G/01/gno/beacon/nav-pop-8bit-h._V155961234_.png' : 'http://g-ecx.images-amazon.com/images/G/01/gno/beacon/nav-pop-h._V155853593_.png');
+                v.src = (ie6 ? 'http://g-ecx.images-amazon.com/images/G/01/gno/beacon/nav-pop-8bit-v._V155961234_.png' : 'http://g-ecx.images-amazon.com/images/G/01/gno/beacon/nav-pop-v._V155853593_.png');
+                window._navpreload = {'sprite_h':h, 'sprite_v':v, '_protectExposeSBD':fn};
+
+                _navpreload._menuCallback = function() {
+                    _navpreload.spin = new Image();
+                    _navpreload.spin.src = 'http://g-ecx.images-amazon.com/images/G/01/javascripts/lib/popover/images/snake._V192571611_.gif';
+                };
+            });
+        });
 
         window.Navbar = function(options) {
             options = options || {};
@@ -125,12 +143,17 @@
         amznJQ.available('jQuery', function() {
             amznJQ.available('navbarJS-beacon', function(){});
         });
+        
+        _navbar.prefetch = function() {
+            amznJQ.addPL(
+                '/hikari/static/themes/white/amznJQ.js'
+            );
+        };
+        
         amznJQ.declareAvailable('navbarBTFLite');
         amznJQ.declareAvailable('navbarBTF');
     </script>
     <script type="text/javascript" src="<%=hikari.config.appPath%>/static/js/jquery-1.7.1.js"></script>
-    <script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/amznJQ.js"></script>
-    <script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/main.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="<%=hikari.config.appPath%>/static/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="<%=hikari.config.appPath%>/static/themes/white/main.css" />
 </head>
@@ -298,9 +321,11 @@
             <span class="order-by-phone">You can also order from Hikari Store by calling (?).</span>
         </div>
     </div>
-</div>
+</div>    
 <div>
     <div id="nav_account_flyout">Your account flyout</div>
 </div>
+<script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/amznJQ.js"></script>
+<script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/main.js"></script>
 </body>
 </html>

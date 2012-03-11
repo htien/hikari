@@ -1,21 +1,26 @@
 <!--#include file="includes/Init.asp"-->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" dir="ltr">
 <head>
-    <script type="text/javascript">var ue_t0=ue_t0||+new Date();</script>
     <meta charset="<%=hikari.config.charset%>" />
     <meta name="author" content="<%=hikari.config.author%>" />
     <meta name="description" content="Linh Kien May Tinh" />
     <meta name="generator" content="Notepad++ v5.9.8" />
     <meta name="keywords" content="light, theme" />
+    <meta name="viewport" content="width=981" />
+    <meta name="application-name" content="Hikari" />
     <base href="<%=hikari.config.appPath%>/" />
     <title><%=hikari.config.pageTitle%></title>
+    <script type="text/javascript">var ue_t0=ue_t0||+new Date();</script>
     <script type="text/javascript">
         new Image().src = "<%=hikari.config.appPath%>/static/themes/white/images/BeaconSprite-US-01._V141013396_.png";
         new Image().src = "<%=hikari.config.appPath%>/static/themes/white/images/nav-pop-h._V155853593_.png";
         new Image().src = "<%=hikari.config.appPath%>/static/themes/white/images/apple_gradient_texture.png";
     </script>
-    <script type='text/javascript'>
+    <link rel="shortcut icon" type="image/x-icon" href="<%=hikari.config.appPath%>/static/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="<%=hikari.config.appPath%>/static/themes/white/main.css" />
+    <script type="text/javascript">
+    //<![CDATA[
         var ue_id='1VQRE4VJFH075NPCFPSJ',
         ue_sid='185-6418178-5614958',
         ue_mid='ATVPDKIKX0DER',
@@ -26,8 +31,10 @@
         ue_navtiming=0;
         ue_rnt=0;
         var ueinit=(ueinit||0)+1;var ue={t0:ue_t0,id:ue_id,url:ue_url,a:"",b:"",e:"",ec:0,h:{},r:{ld:0,oe:0,ul:0},s:1,t:{},sc:{},iel:[]};function uet(c,e,g){var f=(new Date()).getTime();var a=!e&&typeof g!="undefined";if(a){return}if(c){var d=e?ues("t",e)||ues("t",e,{}):ue.t;d[c]=f;for(var b in g){ues(b,e,g[b])}}return f}function ues(b,c,d){var e,a;if(b){e=a=ue;if(c&&c!=e.id){a=e.sc[c];if(!a){a={};d?(e.sc[c]=a):a}}e=d?(a[b]=d):a[b]}return e}function ueh(e,f,d,b,a){var c="on"+d;var g=f[c];if(typeof(g)=="function"){if(e){ue.h[e]=g}}else{g=function(){}}f[c]=a?function(h){b(h);g(h)}:function(h){g(h);b(h)};f[c].isUeh=1}function uex(h,d,g){function c(D,B){var z=[D],u=0,A={};if(B){z.push("m=1");A[B]=1}else{A=ue.sc}var s;for(var t in A){var v=ues("wb",t),y=ues("t",t)||{},x=ues("t0",t)||ue.t0;if(B||v==2){var C=v?u++:"";z.push("sc"+C+"="+t);for(var w in y){if(w.length<=3&&y[w]){z.push(w+C+"="+(y[w]-x))}}z.push("t"+C+"="+y[h]);if(ues("ctb",t)||ues("wb",t)){s=1}}}if(!e&&s){z.push("ctb=1")}return z.join("&")}function j(s){if(s==""){return}var t=new Image();if(ue.b){t.onload=function(){if(ue.b==""){return}var u=ue.b;ue.b="";j(u)}}ue.iel.push(t);t.src=s;if(window.ue_err&&!ue_err.ts){ue_err.startTimer()}}function p(s){var u=s.timing;if(u){ue.t.na_=u.navigationStart;ue.t.ul_=u.unloadEventStart;ue.t._ul=u.unloadEventEnd;ue.t.rd_=u.redirectStart;ue.t._rd=u.redirectEnd;ue.t.fe_=u.fetchStart;ue.t.lk_=u.domainLookupStart;ue.t._lk=u.domainLookupEnd;ue.t.co_=u.connectStart;ue.t._co=u.connectEnd;ue.t.sc_=u.secureConnectionStart;ue.t.rq_=u.requestStart;ue.t.rs_=u.responseStart;ue.t._rs=u.responseEnd;ue.t.dl_=u.domLoading;ue.t.di_=u.domInteractive;ue.t.de_=u.domContentLoadedEventStart;ue.t._de=u.domContentLoadedEventEnd;ue.t._dc=u.domComplete;ue.t.ld_=u.loadEventStart;ue.t._ld=u.loadEventEnd}var t=s.navigation;if(t){ue.t.ty=t.type+ue.t0;ue.t.rc=t.redirectCount+ue.t0}}var r=!d&&typeof g!="undefined";if(r){return}for(var a in g){ues(a,d,g[a])}uet("pc",d,g);var l=ues("id",d)||ue.id;var f=ue.url+"?"+h+"&v=18&id="+l;var e=ues("ctb",d)||ues("wb",d);if(e){f+="&ctb="+e}if(ueinit>1){f+="&ic="+ueinit}var o;if(document.ue_backdetect&&document.ue_backdetect.ue_back){o=document.ue_backdetect.ue_back;if(o.value>1){f+="&bf="+(o.value-1)}}if(ue._fi&&h=="at"&&(!d||d==l)){f+=ue._fi()}var b;if(h=="ld"&&(!d||d==l)){if(window.onbeforeunload&&window.onbeforeunload.isUeh){window.onbeforeunload=null}if(o){o.value++}if(window._uess){b=_uess()}var n=window.performance||window.webkitPerformance;if(window.ue_navtiming&&n&&n.timing){ues("ctb",l,"1");if(ue_navtiming==1){ue.t.tc=n.timing.fetchStart}else{if(ue_navtiming==3){ue.t.tc=n.timing.navigationStart}else{if(ue_navtiming==4){ue.t.tc=n.timing.requestStart}}}}if(window.ue_rnt&&n){p(n)}}uet(h,d,g);var k=(h=="ld"&&d&&ues("wb",d));if(k){ues("wb",d,2)}var m=1;for(var i in ue.sc){if(ues("wb",i)==1){m=0;break}}if(k){if(ue.s!=0||!m){return}f=c(f,null)}else{if(m){var q=c(f,null);if(q!=f){ue.b=q}}if(b){f+=b}f=c(f,d||ue.id)}if(ue.b||k){for(var i in ue.sc){if(ues("wb",i)==2){delete ue.sc[i]}}}if(!k){ue.s=0;if(!window.ue_wl_jserr&&ue.e){f+="&ec="+ue.ec+ue.e;ue.e="";ue.ec=0}if(window.ue_wl_jserr&&window.ue_err&&ue_err.ec>0){f+="&ec="+ue_err.ec}ues("t",d,{})}ue.a=f;j(f)}function uei(){var c=ue.r;function b(e){return function(){if(!c[e]){c[e]=1;uex(e)}}}window.onLd=b("ld");window.onLdEnd=b("ld");var a={beforeunload:b("ul"),error:function(j,h,i){ue.ec++;if(!ue.r.oe){ue.r.oe=1;ue.e+="&em="+escape(j)+"&eu="+escape(h)+"&el="+i}return false},stop:function(){uex("os")}};for(var d in a){ueh(0,window,d,a[d])}if(window.addEventListener){window.addEventListener("load",window.onLd,false)}else{if(window.attachEvent){window.attachEvent("onload",window.onLd)}}ue._uep=function(){new Image().src=(window.ue_md?ue_md:"http://uedata.amazon.com/uedata/?tp=")+(+new Date)};if(window.ue_pr&&(ue_pr==2||ue_pr==4)){ue._uep()}if(window.ue_wl_jserr){window.onerror=window.ueLogError}uet("ue")}uei();
+    //]]>
     </script>
     <script type="text/javascript">
+    <!--
         var amznJQ;
         (function() {
             function f(x) {
@@ -66,7 +73,7 @@
                 strings: {}
             };
         }());
-        
+
         window._navbarSpriteUrl = "http://g-ecx.images-amazon.com/images/G/01/gno/beacon/BeaconSprite-US-01._V141013396_.png";
         amznJQ.available('popover', function() {
             amznJQ.available('navbarBTF', function() {
@@ -138,29 +145,29 @@
         window.AmazonPopoverImages = {
             snake: '/hikari/static/themes/white/images/snake._V192571611_.gif'
         };
-        
+
         amznJQ.declareAvailable('navbarInline');
         amznJQ.available('jQuery', function() {
             amznJQ.available('navbarJS-beacon', function(){});
         });
-        
+
         _navbar.prefetch = function() {
             amznJQ.addPL(
                 '/hikari/static/themes/white/amznJQ.js'
             );
         };
-        
+
         amznJQ.declareAvailable('navbarBTFLite');
         amznJQ.declareAvailable('navbarBTF');
+    //-->
     </script>
-    <script type="text/javascript" src="<%=hikari.config.appPath%>/static/js/jquery-1.7.1.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="<%=hikari.config.appPath%>/static/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="<%=hikari.config.appPath%>/static/themes/white/main.css" />
+    <script type="text/javascript" src="<%=hikari.config.appPath%>/static/js/jquery-1.7.1.js" charset="<%=hikari.config.charset%>"></script>
 </head>
 
 <body class="hikari">
 <div id="ap_container"></div>
 <div id="hikari" class="gA">
+<header>
     <div id="globalHeader" class="gl">
         <div class="amz-discovery">
             <div class="amz-links">
@@ -238,6 +245,8 @@
         </div>
         <div class="amz-globalheader-bottomborder"></div>
     </div>
+</header>
+<section>
     <div id="globalContainer" class="gl">
         <div id="mainContainer" class="amz-container hasLeftCol">
             <div class="amz-leftcolcontainer">
@@ -299,6 +308,13 @@
             </div>
         </div>
     </div>
+</section>
+<section>
+    <div id="pagelet_hidden">
+        <div id="nav_account_flyout" class="hidden">Your account flyout</div>
+    </div>
+</section>
+<footer>
     <div id="globalFooter" class="gl">
         <div id="pagelet_copyrights" class="clearfix">
             <ul class="stores">
@@ -321,11 +337,9 @@
             <span class="order-by-phone">You can also order from Hikari Store by calling (?).</span>
         </div>
     </div>
-</div>    
-<div>
-    <div id="nav_account_flyout">Your account flyout</div>
+</footer>
 </div>
-<script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/amznJQ.js"></script>
-<script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/main.js"></script>
+<script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/amznJQ.js" charset="<%=hikari.config.charset%>"></script>
+<script type="text/javascript" src="<%=hikari.config.appPath%>/static/themes/white/main.js" charset="<%=hikari.config.charset%>"></script>
 </body>
 </html>

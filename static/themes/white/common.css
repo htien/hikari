@@ -31,7 +31,7 @@ pre, code { font-family: Monaco, 'Dejavu Sans Mono', 'Bitstream Vera Sans Mono',
 strong { font-weight: bold; }
 html { overflow-x: auto; overflow-y: scroll; }
 html, body { height: 100%; }
-body { line-height: 16px; color: #333; background-color: #e7ebf2; font-family: Lucida Grande, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; vertical-align: baseline; visibility: visible; }
+body { line-height: 16px; color: #333; /*background-color: #e7ebf2;*/ font-family: Lucida Grande, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; vertical-align: baseline; visibility: visible; }
 
 .aero { opacity: .5; }
 .alignleft { float: left; }

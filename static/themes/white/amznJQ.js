@@ -830,12 +830,14 @@
             }
             if (original) {
                 if (ballMarker && ballMarker.parents('body').length) {
-                    original.hide().insertAfter(ballMarker);
+                    //original.hide().insertAfter(ballMarker);
+                    original.addClass('hidden').insertAfter(ballMarker);
                     ballMarker.remove();
                     ballMarker = null;
                 }
                 else {
-                    original.hide().appendTo(rootElement());
+                    //original.hide().appendTo(rootElement());
+                    original.addClass('hidden').appendTo(rootElement());
                 }
             }
             if (original != popover) {
@@ -889,9 +891,11 @@
             }
             if (typeof settings.autoshow == 'boolean' ? settings.autoshow : autoshow) {
                 if ($.browser.msie) {
-                    container.children().show().hide();
+                    //container.children().show().hide();
+                    container.children().addClass('hidden').removeClass('hidden');
                 }
-                container.children(':not(style)').show();
+                //container.children(':not(style)').show();
+                container.children(':not(style)').removeClass('hidden');
             }
             container.find('.ap_custom_close').click(close);
             if (settings.onFilled) {
